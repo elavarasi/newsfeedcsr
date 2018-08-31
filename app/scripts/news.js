@@ -24,7 +24,8 @@
                     break;
             }
 
-            fetch(proxyurl + url, {     
+            // fetch(proxyurl + url, {     
+            fetch(url, {  
                 headers: {
                     "Content-Type": "application/json; charset=utf-8",
                 },

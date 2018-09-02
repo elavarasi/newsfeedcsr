@@ -2,44 +2,62 @@
 <head>
     <meta charset="UTF-8">
     <title>News</title>
-    <link rel="stylesheet" type="text/css" href="/styles/news.css" defer>
-    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" type="text/css" href="/styles/bootstrap.css" defer>
+    <link rel="stylesheet" type="text/css" href="/styles/main.css" defer>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <script type="text/javascript" src="/scripts/news.js" async></script>
 </head>
 
-<body onLoad="shownews()">
-    <header class="home" role="banner">
-        <div>News Headlines</div>
-    </header>
-    <div id="main-menu">
-        <nav>
-            <ul class=" hidden-xs">
-                <li class="us" id="us">
-                    <button>US</button>
-                </li>
-                <li class="gb" id="gb">
-                    <button>UK</button>
-                </li>
-                <li class="au" id="au">
-                    <button>Australia</button>
-                </li>
-                <li class="fr" id="fr">
-                    <button>France</button>
-                </li>
-                <li class="jp" id="jp">
-                    <button>Japan</button>
-                </li>
-                <li class="cn" id="cn">
-                    <button>China</button>
-                </li>
-     		</ul>
-        </nav>
-        <section class="newslist" id="newslist">
-            <div id="newscontent">
+<body onload="shownews()">
+    <div class="container-fluid mb-4">
+        <div class="row">
+            <div class="col bg-purple-dark text-center text-white"> 
+                <h2> 
+                    <span class="font-cursive">Ela's</span> News Hub
+                </h2>          
             </div>
-        </section>
+        </div>       
+        <div class="row">
+            <div class="col bg-purple text-white"> 
+                <ul class="nav nav-tabs justify-content-center">
+                  <li class="nav-item" id="us">
+                    <a class="nav-link active" href="javascript:void(0)">US</a>
+                  </li>
+                  <li class="nav-item" id="uk">
+                    <a class="nav-link" href="javascript:void(0)">UK</a>
+                  </li>
+                  <li class="nav-item" id="au">
+                    <a class="nav-link" href="javascript:void(0)">Australia</a>
+                  </li>
+                  <li class="nav-item" id="fr">
+                    <a class="nav-link" href="javascript:void(0)">France</a>
+                  </li>
+                  <li class="nav-item" id="jp">
+                    <a class="nav-link" href="javascript:void(0)">Japan</a>
+                  </li>
+                  <li class="nav-item" id="cn">
+                    <a class="nav-link" href="javascript:void(0)">China</a>
+                  </li>
+                </ul>         
+            </div>
+        </div>
     </div>
 
+    <div class="container" id="container">
+        <div class="row">
+                <div id="loader"></div>                
+         </div>
+        <div class="row animate-bottom" id="newscontent">
+        </div>
+    </div> 
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col bg-purple-dark text-center text-white"> 
+                <span>Made with &hearts;</span> 
+            </div>
+        </div> 
+    </div>
 </body>
 
 </html>
